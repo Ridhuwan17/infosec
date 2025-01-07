@@ -15,11 +15,11 @@ const iv = crypto.randomBytes(16);
 const port = process.env.PORT || 3000;
 
 //variable testing
-const credentials_testing = "D:\\Samuel's work\\coding\\infosec-1\\X509-cert-723266351894110951.pem";
+const credentials_testing = "C:\\Users\\ridh1\\OneDrive\\Documents\\BERR-2243\\info sec\\infosec\\X509-cert-723266351894110951.pem";
 const credentials = process.env.MONGO_CERT_PATH;
 
 // Convert the values to numbers
-const maxRetries = parseInt(process.env.MAX_RETRIES, 10);
+const maxRetries = parseInt(process.env.MAX_RETRIES, 10)
 const timeout = parseInt(process.env.TIMEOUT, 10);
 
 // Rate limit for unauthorized users
@@ -1956,7 +1956,7 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const { message } = require("statuses");
 
 const client = new MongoClient('mongodb+srv://benr2423.jgm92s9.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority&appName=BENR2423', {
-  tlsCertificateKeyFile: credentials,
+  tlsCertificateKeyFile: credentials_testing,
   serverApi: ServerApiVersion.v1
 });
 
